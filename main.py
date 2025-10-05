@@ -21,8 +21,11 @@ app.add_middleware(
         "http://127.0.0.1:5173",
         "http://localhost:5174",
         "http://127.0.0.1:5174",
-        “https://kilinc-api-frontend.onrender.com”,
+        # Frontend Render domain (production)
+        "https://kilinc-api-frontend.onrender.com",
     ],
+    # Allow any Render subdomain as origin
+    allow_origin_regex=r"https://.*\.onrender\.com",
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],

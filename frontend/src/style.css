@@ -97,29 +97,29 @@ button:focus-visible {
 
 /* Avenir and Montserrat font faces */
 @font-face {
-  font-family: 'Avenir';
-  src: url('http://kilinc-api-backend.onrender.com/avenir/Avenir-Book.ttf') format('truetype');
+  font-family: 'Avenir Book';
+  src: url('https://kilinc-api-backend.onrender.com/avenir/Avenir-Book.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Avenir';
-  src: url('http://kilinc-api-backend.onrender.com/avenir/Avenir-Black.ttf') format('truetype');
+  font-family: 'Avenir Black';
+  src: url('https://kilinc-api-backend.onrender.com/avenir/Avenir-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: url('http://kilinc-api-backend.onrender.com/montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-family: 'Montserrat Regular';
+  src: url('https://kilinc-api-backend.onrender.com/montserrat/Montserrat-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: url('http://kilinc-api-backend.onrender.com/montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-family: 'Montserrat Bold';
+  src: url('https://kilinc-api-backend.onrender.com/montserrat/Montserrat-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -218,7 +218,6 @@ h1, h2, h3, .title {
   scrollbar-width: none; /* Firefox */
 }
 .carousel-viewport::-webkit-scrollbar { display: none; }
-
 .carousel-track {
   display: flex;
   gap: 20px;
@@ -308,7 +307,6 @@ h1, h2, h3, .title {
   scrollbar-width: none; /* Firefox */
 }
 .carousel-viewport::-webkit-scrollbar { display: none; }
-
 .carousel-track {
   display: flex;
   gap: 20px;
