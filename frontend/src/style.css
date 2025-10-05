@@ -98,28 +98,28 @@ button:focus-visible {
 /* Avenir and Montserrat font faces */
 @font-face {
   font-family: 'Avenir';
-  src: url('http://127.0.0.1:8000/avenir/Avenir-Book.ttf') format('truetype');
+  src: url('http://kilinc-api-backend.onrender.com/avenir/Avenir-Book.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Avenir';
-  src: url('http://127.0.0.1:8000/avenir/Avenir-Black.ttf') format('truetype');
+  src: url('http://kilinc-api-backend.onrender.com/avenir/Avenir-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('http://127.0.0.1:8000/montserrat/Montserrat-Regular.ttf') format('truetype');
+  src: url('http://kilinc-api-backend.onrender.com/montserrat/Montserrat-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('http://127.0.0.1:8000/montserrat/Montserrat-Bold.ttf') format('truetype');
+  src: url('http://kilinc-api-backend.onrender.com/montserrat/Montserrat-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;

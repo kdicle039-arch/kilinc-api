@@ -1,6 +1,6 @@
 import './style.css'
 
-const API_BASE = 'http://127.0.0.1:8000'
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://kilinc-api-backend.onrender.com'//const API_BASE = 'http://127.0.0.1:8000'
 
 function formatUSD(value) {
   return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2 }).format(value)
