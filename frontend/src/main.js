@@ -1,7 +1,7 @@
 import './style.css'
 
 // Use production backend by default; allow override via Vite env
-const API_BASE = import.meta.env.VITE_API_BASE || 'https://kilinc-api-backend.onrender.com'
+const API_BASE = (import.meta.env.VITE_API_BASE || 'https://kilinc-api-backend.onrender.com').replace(/\/+$/, '')
 
 function formatUSD(value) {
   return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2 }).format(value)
