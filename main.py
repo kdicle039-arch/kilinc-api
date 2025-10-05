@@ -6,9 +6,23 @@ from services.gold_price import fetch_gold_price_usd_per_gram
 from services.pricing import calc_usd_price, popularity_to_stars
 import asyncio
 from fastapi.staticfiles import StaticFiles
+# Add: normalize double slashes in incoming request paths
+import re
+from starlette.middleware.base import BaseHTTPMiddleware
 
 app = FastAPI(title="Kılınç API")
 
+class StripDoubleSlashMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request, call_next):
+        path = request.scope.get("path", "")
+        # Collapse consecutive slashes to a single slash
+        normalized = re.sub(r"/{2,}", "/", path)
+        if normalized != path:
+            request.scope["path"] = normalized
+        return await call_next(request)
+
+# Register middleware early so routing sees normalized paths
+app.add_middleware(StripDoubleSlashMiddleware)
 # Serve fonts as static
 app.mount("/avenir", StaticFiles(directory="avenir"), name="avenir")
 app.mount("/montserrat", StaticFiles(directory="montserrat"), name="montserrat")
