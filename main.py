@@ -96,4 +96,5 @@ async def get_products(
 
     return {"goldPriceUSDPerGram": gold_price, "count": len(filtered), "items": filtered}
 
-# Run: uvicorn main:app --reload --port 8000
+# Run (local): uvicorn main:app --reload --port 8000
+# Run (Render): uvicorn main:app --host 0.0.0.0 --port $PORT
